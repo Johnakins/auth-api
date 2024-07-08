@@ -29,6 +29,7 @@ const authenticateJWT = (req, res, next) => {
   }
 };
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 // User registration
 app.post('/auth/register',
     [
@@ -311,4 +312,4 @@ app.post('/api/organisations/:orgId/users', async (req, res) => {
    console.log('Server started on http://localhost:3000');
  });
 
- module.exports = app;
+module.exports = app;
