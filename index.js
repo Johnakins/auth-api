@@ -308,7 +308,7 @@ app.post('/api/organisations/:orgId/users', async (req, res) => {
   }
 );
 
- app.listen(3000, () => {
+ app.listen(8080, () => {
    console.log('Server started on http://localhost:3000');
  });
 
